@@ -1,0 +1,14 @@
+{
+  "name": "anncode-site",
+  "version": "1.0.0",
+  "description": "AnnCode portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AniaB",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
