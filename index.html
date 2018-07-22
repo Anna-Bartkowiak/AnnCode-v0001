@@ -21,9 +21,9 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item navigation__item--current"><a href="#" data-hover="projects" class="navigation__link">projects</a></li>
-                    <li class="navigation__item"><a href="#" data-hover="about" class="navigation__link">about</a></li>
-                    <li class="navigation__item"><a href="#" data-hover="contact" class="navigation__link">contact</a></li>
+                    <li id="#projects" class="navigation__item navigation__item--current"><a href="#" data-hover="projects" class="navigation__link">projects</a></li>
+                    <li id="#about" class="navigation__item"><a href="#" data-hover="about" class="navigation__link">about</a></li>
+                    <li id="#contact" class="navigation__item"><a href="#" data-hover="contact" class="navigation__link">contact</a></li>
                 </ul>
             </nav>
 
@@ -35,20 +35,20 @@
 
         <main>
             <!-- SLIDESHOW CONTAINER -->
-            <section class="section-project-slideshow">
-                <div class="row section-project-slideshow__mySlides section-project-slideshow__fade">
+            <section id="projects" class="section-slideshow">
+                <div class="row section-slideshow__mySlides section-slideshow__fade">
                     <div class="col-2-of-3">
-                        <div class="slideshow__foto">
+                        <div class="photo-box">
                             <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
                                 alt="Photo 1"
-                                class="composition__photo composition__photo--p1"
+                                class="section-slideshow__photo section-slideshow__photo--p1"
                                 src="img/nat-1-large.jpg">
                         </div>
                     </div>
 
                     <div class="col-1-of-3">
-                        <div class="slideshow__text">
+                        <div class="section-slideshow__text">
                             <h3 class="heading-tertiary u-margin-bottom-small">A project for a cosmetic salon</h3>
                             <p class="paragraph">
                                 Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt? Libero itaque soluta eveniet nulla ipsa recusandae veritatis, in nisi ipsum maxime iste aperiam atque exercitationem?
@@ -60,19 +60,19 @@
                     </div>
                 </div>
 
-                <div class="row section-project-slideshow__mySlides section-project-slideshow__fade">
+                <div class="row section-slideshow__mySlides section-slideshow__fade">
                     <div class="col-2-of-3">
-                        <div class="slideshow__foto">
+                        <div class="photo-box">
                             <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
                                 alt="Photo 1"
-                                class="composition__photo composition__photo--p1"
+                                class="section-slideshow__photo section-slideshow__photo--p1"
                                 src="img/nat-1-large.jpg">
                         </div>
                     </div>
 
                     <div class="col-1-of-3">
-                        <div class="slideshow__text">
+                        <div class="section-slideshow__text">
                             <h3 class="heading-tertiary u-margin-bottom-small">A project for a cosmetic salon</h3>
                             <p class="paragraph">
                                 Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt? Libero itaque soluta eveniet nulla ipsa recusandae veritatis, in nisi ipsum maxime iste aperiam atque exercitationem?
@@ -84,19 +84,19 @@
                     </div>
                 </div>
 
-                <div class="row section-project-slideshow__mySlides section-project-slideshow__fade">
+                <div class="row section-slideshow__mySlides section-slideshow__fade">
                     <div class="col-2-of-3">
-                        <div class="slideshow__foto">
+                        <div class="photo-box">
                             <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
                                 alt="Photo 1"
-                                class="composition__photo composition__photo--p1"
+                                class="section-slideshow__photo section-slideshow__photo--p1"
                                 src="img/nat-1-large.jpg">
                         </div>
                     </div>
 
                     <div class="col-1-of-3">
-                        <div class="slideshow__text">
+                        <div class="section-slideshow__text">
                             <h3 class="heading-tertiary u-margin-bottom-small">A project for a cosmetic salon</h3>
                             <p class="paragraph">
                                 Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt? Libero itaque soluta eveniet nulla ipsa recusandae veritatis, in nisi ipsum maxime iste aperiam atque exercitationem?
@@ -118,10 +118,10 @@
                 </div>
             </section>
 
-            <section class="section-about">
+            <section id="about" class="section-about">
                 <div class="row">
-                    <div class="col-1-of-3">
-                        <div class="composition">
+                    <div class="col-2-of-3">
+                        <div class="photo-box">
                             <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
                                 alt="Photo 1"
@@ -130,7 +130,7 @@
                         </div>
                     </div>
 
-                    <div class="col-2-of-3">
+                    <div class="col-1-of-3">
                         <h3 class="heading-tertiary u-margin-bottom-small">About</h3>
                         <p class="paragraph">
                             Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt? Libero itaque soluta eveniet nulla ipsa recusandae veritatis, in nisi ipsum maxime iste aperiam atque exercitationem?
@@ -149,14 +149,14 @@
                 </div>
             </section>
 
-            <section class="section-contact">
+            <section id="contact" class="section-contact">
                 <div class="row">
                     <div class="col-1-of-3">
                         <h3 class="heading-tertiary u-margin-bottom-small">A project for a cosmetic salon</h3>
                     </div>
 
                     <div class="col-2-of-3">
-                        <div class="composition">
+                        <div class="photo-box">
                             <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
                                 alt="Photo 1"

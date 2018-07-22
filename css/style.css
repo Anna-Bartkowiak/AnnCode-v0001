@@ -18,23 +18,28 @@ body {
   max-width: 160rem; }
 
 .col-1-of-3 {
-  width: calc((100% - 2 * 6rem) / 3); }
+  width: calc((100% - 2 * 3rem) / 3); }
 
 .col-2-of-3 {
-  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  width: calc(2 * ((100% - 2 * 3rem) / 3) + 3rem); }
 
 .navigation {
-  height: 10rem;
+  height: 100px;
+  min-height: 6rem;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   font-size: 1.8rem;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #eee;
+  z-index: 2000;
+  background-color: #f7f7f7; }
   .navigation__logo-box {
     position: absolute;
     top: 2rem;
-    left: 1.5rem; }
+    left: 1.5rem;
+    cursor: pointer;
+    z-index: 3000; }
   .navigation__logo {
     height: 4rem; }
   .navigation__nav {
@@ -46,30 +51,55 @@ body {
     transform: translate(-50%, -50%); }
   .navigation__list {
     width: 100%;
-    letter-spacing: 0.5rem;
+    letter-spacing: .4rem;
     line-height: 1.6;
     height: inherit; }
   .navigation__item {
     display: inline-block;
-    list-style: outside none none;
-    position: relative;
-    padding: 1rem 3rem; }
-    .navigation__item:after {
-      position: absolute;
-      transition: .3s;
-      content: '';
-      width: 0;
-      left: 50%;
-      bottom: 0;
-      height: 3px;
-      background: #777; }
-    .navigation__item:hover {
-      cursor: pointer; }
-      .navigation__item:hover:after {
-        width: 100%;
-        left: 0; }
+    padding: 0 2rem; }
+  .navigation__icon {
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    z-index: 3000;
+    color: #777; }
   .navigation__link {
     height: inherit;
     display: inline-block;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    list-style: outside none none;
+    position: relative;
+    padding: .5rem 0; }
+    .navigation__link:after {
+      position: absolute;
+      transition: .3s;
+      content: "";
+      width: 0;
+      left: 50%;
+      bottom: 0;
+      height: 2px;
+      background: #777; }
+    .navigation__link:hover {
+      cursor: pointer; }
+      .navigation__link:hover:after {
+        width: 100%;
+        left: 0; }
+
+.section-slideshow {
+  position: relative; }
+  .section-slideshow__mySlides {
+    height: calc(100vh - 100px);
+    margin-top: 100px; }
+
+.section-about {
+  height: calc(100vh - 100px);
+  margin-top: 100px; }
+
+.section-contact {
+  height: 85vh;
+  margin-top: 100px;
+  margin-bottom: 50px; }

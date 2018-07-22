@@ -2,9 +2,9 @@
 
 $grid-width: 160rem;
 
-$gutter-horizontal: 6rem;
+$gutter-horizontal: 3rem;
 
-// 
+// COLORS
 $color-primary: #F5F5F5;
 $color-primary-light: #D2CADB;
 $color-primary-dark: #47266B;
@@ -19,5 +19,8 @@ $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 $color-grey-dark-1: #777;
 
+// Height section
+$navigation-height: 100px;
 $section-height: calc(100vh - 100px);
-$section-height-footer: calc(100vh - 150px);
+$section-height-footer: 85vh;
+$footer-height: 50px;

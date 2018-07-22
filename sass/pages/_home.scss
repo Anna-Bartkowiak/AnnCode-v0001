@@ -1,3 +1,19 @@
-// section {
-//     height: 90vh;
-// }
+.section-slideshow {
+    position: relative;
+
+    &__mySlides {
+        height: $section-height;
+        margin-top: $navigation-height;
+    }
+}
+
+.section-about {
+    height: $section-height;
+    margin-top: $navigation-height;
+}
+
+.section-contact {
+    height: $section-height-footer;
+    margin-top: $navigation-height;
+    margin-bottom: $footer-height;
+}

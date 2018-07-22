@@ -1,16 +1,22 @@
 .navigation {
-    height: 10rem;
+    height: $navigation-height;
+    min-height: 6rem;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     font-size: 1.8rem;
     border-bottom: 1px solid $color-grey-light-2;
+    z-index: 2000;
+    background-color: $color-grey-light-1;
+    // background-image: linear-gradient(to right bottom, #D2CADB, #47266B);
 
     &__logo-box {
         position: absolute;
         top: 2rem;
         left: 1.5rem;
+        cursor: pointer;
+        z-index: 3000;
     }
 
     &__logo {
@@ -28,7 +34,7 @@
     
     &__list {
         width: 100%;
-        letter-spacing: 0.5rem;
+        letter-spacing: .4rem;
         line-height: 1.6;
         // float: right;
         height: inherit;
@@ -36,18 +42,41 @@
 
     &__item {
         display: inline-block;
+        padding: 0 2rem;
+
+        &--current {
+
+        }
+    }
+
+    &__icon {
+        height: 4rem;
+        width: 4rem;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+        z-index: 3000;
+        color: $color-grey-dark-1;
+    }
+
+    &__link {
+        height: inherit;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
         list-style: outside none none;
         position: relative;
-        padding: 1rem 3rem;
+        padding: .5rem 0;
 
         &:after {
             position: absolute;
             transition: .3s;
-            content: '';
+            content: "";
             width: 0;
             left: 50%;
             bottom: 0;
-            height: 3px;
+            height: 2px;
             background: $color-grey-dark-1;
           }
         
@@ -59,20 +88,5 @@
                 left: 0;
             }
         }
-
-        &--current {
-
-        }
-    }
-
-    &__icon {
-
-    }
-
-    &__link {
-        height: inherit;
-        display: inline-block;
-        text-decoration: none;
-        text-transform: uppercase;
     }
 }
