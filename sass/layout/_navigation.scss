@@ -50,22 +50,25 @@
     }
 
     &__icon {
-        height: 4rem;
-        width: 4rem;
+        // height: 4rem;
+        width: 8rem;
         position: absolute;
-        top: 2rem;
-        right: 2rem;
+        top: 3.5rem;
+        right: 4rem;
         cursor: pointer;
         z-index: 3000;
         color: $color-grey-dark-1;
+        text-align: center;
     }
 
     &__link {
         height: inherit;
         display: inline-block;
+
         text-decoration: none;
         text-transform: uppercase;
         list-style: outside none none;
+
         position: relative;
         padding: .5rem 0;
 

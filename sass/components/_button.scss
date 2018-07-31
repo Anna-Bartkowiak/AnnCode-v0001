@@ -1,3 +1,33 @@
 .btn {
-    
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+    }
+
+    &--grey {
+        background-color: $color-grey-dark-1;
+        border: 1px solid $color-grey-dark-1;
+        color: $color-grey-light-1;
+        padding: 1rem 1.4rem;
+        letter-spacing: $default-letter-spacing;
+    }
+
+    &--white {
+        border: 1px solid $color-grey-dark-1;
+        color: $color-grey-dark-1;
+        padding: .6rem .8rem;
+    }
+
+    &--none-border {
+        border: none;
+    }
+
+    &--animated {
+
+    }
 }

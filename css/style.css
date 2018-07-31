@@ -1,3 +1,11 @@
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 * {
   margin: 0 auto;
   padding: 0; }
@@ -8,6 +16,10 @@ html {
 body {
   box-sizing: border-box; }
 
+.section-slideshow__photo {
+  animation-name: moveInRight;
+  animation-duration: .6s; }
+
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
@@ -15,30 +27,46 @@ body {
   color: #777; }
 
 .heading-primary {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 300;
   border-bottom: 1px solid;
   letter-spacing: 0.2rem;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  animation-name: moveInRight;
+  animation-duration: .3s; }
 
 .paragraph {
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem; }
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  animation-name: moveInRight;
+  animation-duration: .6s; }
+
+.fab {
+  font-size: 2.5rem; }
 
 .u-margin-bottom-small {
   margin-bottom: 2rem !important; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem !important; }
+  margin-bottom: 3rem !important; }
 
 .u-margin-bottom-big {
   margin-bottom: 6rem !important; }
 
+.u-margin-left-small {
+  margin-left: 1.5rem !important; }
+
+.u-margin-left-medium {
+  margin-left: 6.5rem !important; }
+
+.u-margin-left-big {
+  margin-left: 8.5rem !important; }
+
 .u-padding-bottom-small {
-  padding-bottom: 0.5rem !important; }
+  padding-bottom: .4rem !important; }
 
 .u-padding-bottom-medium {
-  padding-bottom: 1rem !important; }
+  padding-bottom: .7rem !important; }
 
 .u-padding-bottom-big {
   padding-bottom: 2rem !important; }
@@ -51,6 +79,28 @@ body {
 
 .u-padding-left-big {
   padding-left: 8.5rem !important; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 1.6rem; }
+
+.btn--grey {
+  background-color: #777;
+  border: 1px solid #777;
+  color: #f7f7f7;
+  padding: 1rem 1.4rem;
+  letter-spacing: 0.2rem; }
+
+.btn--white {
+  border: 1px solid #777;
+  color: #777;
+  padding: .6rem .8rem; }
+
+.btn--none-border {
+  border: none; }
 
 .row {
   max-width: 160rem; }
@@ -96,14 +146,14 @@ body {
     display: inline-block;
     padding: 0 2rem; }
   .navigation__icon {
-    height: 4rem;
-    width: 4rem;
+    width: 8rem;
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 3.5rem;
+    right: 4rem;
     cursor: pointer;
     z-index: 3000;
-    color: #777; }
+    color: #777;
+    text-align: center; }
   .navigation__link {
     height: inherit;
     display: inline-block;
