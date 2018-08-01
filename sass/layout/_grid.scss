@@ -2,6 +2,10 @@
     max-width: $grid-width;
 }
 
+[class^="col-"] {
+    float: left;
+}
+
 .col-1-of-3 {
     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
 }

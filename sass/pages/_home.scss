@@ -4,6 +4,12 @@
     &__mySlides {
         height: $section-height;
         margin-top: $navigation-height;
+        // display: flex;
+    }
+
+    &__buttons {
+        animation-name: moveInRight;
+        animation-duration: .3s;
     }
 }
 
@@ -13,7 +19,6 @@
 }
 
 .section-contact {
-    height: $section-height-footer;
+    height: $section-height;
     margin-top: $navigation-height;
-    margin-bottom: $footer-height;
 }

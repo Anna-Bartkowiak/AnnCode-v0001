@@ -1,26 +1,26 @@
 .navigation {
     height: $navigation-height;
-    min-height: 6rem;
+    min-height: 5rem;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     border-bottom: 1px solid $color-grey-light-2;
     z-index: 2000;
-    background-color: $color-grey-light-1;
+    background-color: $color-white;
     // background-image: linear-gradient(to right bottom, #D2CADB, #47266B);
 
     &__logo-box {
         position: absolute;
-        top: 2.5rem;
+        top: 1.9rem;
         left: 1.5rem;
         cursor: pointer;
         z-index: 3000;
     }
 
     &__logo {
-        height: 5rem;
+        height: 3.5rem;
     }
 
     &__nav {
@@ -51,14 +51,19 @@
 
     &__icon {
         // height: 4rem;
-        width: 8rem;
+        width: 12rem;
         position: absolute;
-        top: 3.5rem;
-        right: 4rem;
+        top: 1.7rem;
+        right: 1rem;
         cursor: pointer;
         z-index: 3000;
         color: $color-grey-dark-1;
         text-align: center;
+        // display: inline-block;
+        
+        &:not(:last-child) {
+            padding-right: 2rem;
+        }
     }
 
     &__link {
@@ -71,6 +76,14 @@
 
         position: relative;
         padding: .5rem 0;
+
+        transition: all .2s;
+
+        &,
+        &:link,
+        &:visited {
+            color: $color-grey-dark-1;
+        }
 
         &:after {
             position: absolute;
@@ -85,6 +98,17 @@
         
         &:hover {
             cursor: pointer;
+            transform: scale(1.1);
+
+            &:after {
+                width: 100%;
+                left: 0;
+            }
+        }
+
+        &:active,
+        &:focus {
+            transform: scale(1.1);
 
             &:after {
                 width: 100%;
