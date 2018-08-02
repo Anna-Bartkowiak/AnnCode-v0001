@@ -1,7 +1,7 @@
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(20rem);
+        transform: translateX(50rem);
     }
 
     100% {
@@ -13,7 +13,7 @@
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(20rem);
+        transform: translateY(50rem);
     }
 
     100% {
@@ -25,7 +25,7 @@
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-20rem);
+        transform: translateX(-50rem);
     }
 
     100% {

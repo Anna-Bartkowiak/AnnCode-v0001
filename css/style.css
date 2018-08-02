@@ -1,7 +1,7 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(20rem); }
+    transform: translateX(50rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -9,7 +9,7 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(20rem); }
+    transform: translateY(50rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -17,7 +17,7 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-20rem); }
+    transform: translateX(-50rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -155,15 +155,29 @@ body {
 
 .row {
   max-width: 160rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 3rem; }
 
-[class^="col-"] {
-  float: left; }
+.col-1-of-2 {
+  width: calc((100% - 3rem) / 2); }
 
 .col-1-of-3 {
   width: calc((100% - 2 * 3rem) / 3); }
 
 .col-2-of-3 {
   width: calc(2 * ((100% - 2 * 3rem) / 3) + 3rem); }
+
+.col-2-of-8 {
+  width: calc(2 * ((100% - 7 * 3rem) / 8) + 3rem); }
+
+.col-4-of-8 {
+  width: calc(4 * ((100% - 7 * 3rem) / 8) + 3 * 3rem); }
 
 .navigation {
   height: 70px;
@@ -249,7 +263,7 @@ body {
     margin-top: 70px; }
   .section-slideshow__buttons {
     animation-name: moveInRight;
-    animation-duration: .3s; }
+    animation-duration: .7s; }
 
 .section-about {
   height: calc(100vh - 70px);

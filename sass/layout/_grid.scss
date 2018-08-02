@@ -1,9 +1,24 @@
 .row {
     max-width: $grid-width;
+
+    // &:not(:last-child) {
+    //     margin-bottom: $gutter-vertical;
+    // }
+
+    @include clearfix;
+
+    [class^="col-"] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
 }
 
-[class^="col-"] {
-    float: left;
+.col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+    
 }
 
 .col-1-of-3 {
@@ -12,4 +27,14 @@
 
 .col-2-of-3 {
     width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
+}
+
+
+
+.col-2-of-8 {
+    width: calc(2 * ((100% - 7 * #{$gutter-horizontal}) / 8) + #{$gutter-horizontal});
+}
+
+.col-4-of-8 {
+    width: calc(4 * ((100% - 7 * #{$gutter-horizontal}) / 8) + 3 * #{$gutter-horizontal});
 }
