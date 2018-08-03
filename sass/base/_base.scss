@@ -11,13 +11,3 @@ html {
 body {
     box-sizing: border-box;
 }
-
-.section-slideshow__photo {
-    animation-name: moveInRight;
-    animation-duration: .6s;
-    // transition: transform .3s;
-
-    // &:hover {
-    //     transform: scale(1.2);
-    // }
-}

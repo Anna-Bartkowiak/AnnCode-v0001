@@ -1,0 +1,15 @@
+.footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background-color: $color-grey-dark-2;
+    color: $color-grey-light-4;
+    margin-top: -5rem;
+
+    &__link {
+        &:hover{
+            color: $color-grey-light-2;
+        }
+    }
+}
