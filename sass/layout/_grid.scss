@@ -25,6 +25,7 @@
 .col-1-of-3 {
     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
     height: 100%;
+    position: relative;
 }
 
 // .col-2-of-3 {

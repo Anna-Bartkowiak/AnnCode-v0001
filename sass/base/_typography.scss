@@ -29,20 +29,35 @@ body {
             animation-duration: .4s;
         }
     }
-    // &__animated--right {
-    //     animation-name: moveInRight;
-    //     animation-duration: .3s;
-    // }
+}
 
-    // &__animated--bottom {
-    //     animation-name: moveInBottom;
-    //     animation-duration: .3s;
-    // }
+.heading-secondary {
+    margin: 0 3rem;
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+    border-bottom: 1px solid; 
+    letter-spacing: $default-letter-spacing;
+    font-family: 'Roboto', sans-serif;
 
-    // &__animated--left {
-    //     animation-name: moveInLeft;
-    //     animation-duration: .3s;
-    // }
+    transition: all .4s;
+
+    &__animated {
+        &--left {
+            animation-name: moveInLeft;
+            animation-duration: .4s;
+        }
+
+        &--bottom {
+            animation-name: moveInBottom;
+            animation-duration: .4s;
+        }
+
+        &--right {
+            animation-name: moveInRight;
+            animation-duration: .4s;
+        }
+    }
 }
 
 .paragraph {
@@ -66,19 +81,33 @@ body {
             animation-duration: .6s;
         }
     }
-    // animation-name: moveInRight;
-    // animation-duration: .6s;
-    // // backface-visibility: hidden;
+}
 
-    // &--animated-bottom {
-    //     animation-name: moveInBottom;
-    //     animation-duration: .6s;
-    // }
+.paragraph-secondary {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: $default-font-size;
+    letter-spacing: $default-letter-spacing;
+    transition: all .6s;
 
-    // &--animated-left {
-    //     animation-name: moveInLeft;
-    //     animation-duration: .6s;
-    // }
+    &__animated {
+        &--left {
+            animation-name: moveInLeft;
+            animation-duration: .6s;
+        }
+
+        &--bottom {
+            animation-name: moveInBottom;
+            animation-duration: .6s;
+        }
+
+        &--right {
+            animation-name: moveInRight;
+            animation-duration: .6s;
+        }
+    }
 }
 
 .fab {

@@ -10,9 +10,10 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400|Roboto:300i,400i" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
 
-        <title> AnnCode - Front end developer | Coding responsive websites - html5, css3, javascript, sass, node.js. </title>
+        <title> AnnCode - Front end developer | Coding responsive websites - html5, css3, javascript, sass, bem, node.js. </title>
     </head>
 
     <body>
@@ -30,8 +31,8 @@
             </nav>
 
             <div class="navigation__icon">
-                <a href="#" class="btn btn--white btn--none-border"><i class="fab fa-github-alt"></i></a>
-                <a href="#" class="btn btn--white btn--none-border"><i class="fab fa-linkedin-in"></i></a>
+                <a href="http://github.com/Anna-Bartkowiak" target="_blank" class="btn btn--white btn--none-border"><i class="fab fa-github-alt"></i></a>
+                <a href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" target="_blank" class="btn btn--white btn--none-border"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
 
@@ -57,8 +58,8 @@
                             </p>
 
                             <div class="section-slideshow__buttons u-margin-bottom-medium u-margin-left-medium .u-margin-right-medium">
-                                <a href="#" class="btn btn--grey">Take me to live</a>
-                                <a href="#" class="btn btn--white"><i class="fab fa-github-alt"></i></a>
+                                <a href="http://totalnakosmetyka.pl/" target="_blank" class="btn btn--grey">Take me to live</a>
+                                <a href="https://github.com/Anna-Bartkowiak/Projekt---Totalna-Kosmetyka.git" target="_blank" class="btn btn--white"><i class="fab fa-github-alt"></i></a>
                             </div>
                         </div>
                     </div>
@@ -83,8 +84,8 @@
                             </p>
 
                             <div class="section-slideshow__buttons u-margin-bottom-medium u-margin-left-medium .u-margin-right-medium">
-                                <a href="#" class="btn btn--grey">Take me to live</a>
-                                <a href="#" class="btn btn--white"><i class="fab fa-github-alt"></i></a>
+                                <a href="http://adambartoszewski.pl/" target="_blank" class="btn btn--grey">Take me to live</a>
+                                <a href="https://github.com/Anna-Bartkowiak/Adam-portfolio.git" target="_blank" class="btn btn--white"><i class="fab fa-github-alt"></i></a>
                             </div>
                         </div>
                     </div>
@@ -109,15 +110,14 @@
                             </p>
 
                             <div class="section-slideshow__buttons u-margin-bottom-medium u-margin-left-medium .u-margin-right-medium">
-                                <a href="#" class="btn btn--grey">Take me to live</a>
-                                <a href="#" class="btn btn--white"><i class="fab fa-github-alt"></i></a>
+                                <a href="#" target="_blank" class="btn btn--grey">Take me to live</a>
+                                <a href="#" target="_blank" class="btn btn--white"><i class="fab fa-github-alt"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="w3-center w3-container w3-section w3-large w3-text-grey w3-display-bottommiddle" style="width:100%">
-                    <!-- <div class="w3-left w3-hover-text-dark-grey" onclick="plusDivs(-1)">&larr; prev</div> -->
                     <div class="w3-right w3-hover-text-dark-grey" onclick="plusDivs(1)">next  &rarr;</div>
                     <span class="w3-badge demo w3-border w3-transparent w3-hover-grey" onclick="currentDiv(1)"></span>
                     <span class="w3-badge demo w3-border w3-transparent w3-hover-grey" onclick="currentDiv(2)"></span>
@@ -127,40 +127,27 @@
 
             <section id="about" class="section-about section-about--margin">
                 <div class="row">
-                    <!-- <div class="col-1-of-3">
-                        <div class="photo-box">
-                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
-                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
-                                alt="Photo 1"
-                                class="composition__photo composition__photo--p1"
-                                src="img/nat-1-large.jpg">
-                        </div>
-                    </div> -->
-
                     <div class="col-1-of-3">
-                        <div class="section-about__box section-about__animated--1">
-                            <h3 class="heading-primary heading-primary__animated--left">About me</h3>
-                            <p class="paragraph paragraph__animated--left">
-                                Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt? Libero itaque soluta eveniet nulla ipsa recusandae veritatis, in nisi ipsum maxime iste aperiam atque exercitationem? Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt?
-                            </p>
+                        <div class="about-box__box about-box__animated--1">
+                            <i class="about-box__icon icon-basic-magnifier"></i>
+                            <h3 class="heading-secondary heading-secondary__animated--left">My life</h3>
+                            <p class="paragraph-secondary paragraph-secondary__animated--left">Live in Warsaw but came from Szczecin. There is something that I left behind. My lovely family, great friends and the sweetness of my memories.<br><br>But every day I wake up with a smile on my face because here starts another part of my precious life. Positive and open to the world. Empathetic and present to people. I like company, but also value my own. Sometimes chatty and hyperactive, sometimes quiet and calm. Love music, sports and reflection.</p>
                         </div>
                     </div>
 
                     <div class="col-1-of-3">
-                        <div class="section-about__box section-about__animated--2">
-                            <h3 class="heading-primary heading-primary__animated--bottom">What I am doing</h3>
-                            <p class="paragraph paragraph__animated--bottom">
-                                Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt? Libero itaque soluta eveniet nulla ipsa recusandae veritatis, in nisi ipsum maxime iste aperiam atque exercitationem? Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt?
-                            </p>
+                        <div class="about-box__box about-box__animated--1">
+                            <i class="about-box__icon icon-basic-map"></i>
+                            <h3 class="heading-secondary heading-secondary__animated--left">My way</h3>
+                            <p class="paragraph-secondary paragraph-secondary__animated--left">I started with a three-month bootcamp and I'm still learning on my own with freecodecamp, codecamedy, stackoverflow and udemy. It started to be bum rap with javascript. At first I don't succeed, then dust myself off and try again and again.<br><br>Now I can tell you that these are the things that I can do myself</span>: responsive websites using bem methodology, preprocessor sass and simple animations in css3.</p>
                         </div>
                     </div>
 
                     <div class="col-1-of-3">
-                        <div class="section-about__box section-about__animated--3">
-                            <h3 class="heading-primary heading-primary__animated--right">My plans</h3>
-                            <p class="paragraph paragraph__animated--right">
-                                Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt? Libero itaque soluta eveniet nulla ipsa recusandae veritatis, in nisi ipsum maxime iste aperiam atque exercitationem? Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt?
-                            </p>
+                        <div class="about-box__box about-box__animated--1">
+                            <i class="about-box__icon icon-basic-world"></i>
+                            <h3 class="heading-secondary heading-secondary__animated--left">My plans</h3>
+                            <p class="paragraph-secondary paragraph-secondary__animated--left">I want to have a javascript and node.js superpower so <span class="paragraph--underline">old mistakes are gone, I won't do them no more,</span> I turned them into lessons. Less talking, more action. You just gona see AnnCode coming. I just keep elevating. No losses, just upgrading and I need you to be one step closer to the goal and <span class="paragraph--underline">Keep rollin’, rollin’, rollin’, rollin’...</span><br><br><span class="paragraph--underline">I would love to meet you, and this is crazy, But here's my number, so call me, maybe?</span></p>
                         </div>
                     </div>
                 </div>
@@ -186,7 +173,7 @@
         </main>
 
         <footer class="footer">
-            <p class="footer__copyright">Design <a href="#" class="footer__link">ADRG</a>. Code <a href="#" class="footer__link">AnnCode</a>. Copyright 2018 &copy; by <a href="#" class="footer__link">AnnCode</a>
+            <p class="footer__copyright">Design <a href="http://adambartoszewski.pl/" target="_blank" class="footer__link">ADRG</a>. Copyright 2018 &copy; by AnnCode
             </p>
         </footer>
         <script src="js/script.js"></script>
