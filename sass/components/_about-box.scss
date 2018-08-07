@@ -1,22 +1,20 @@
 .about-box {
+    background-color: rgba($color-grey-light-1, .6rem);
+    text-align: center;
+    padding-top: 3.5rem;
+    transition: all 0.3s;
 
-    &__box {
-        background-color: rgba($color-grey-light-1, .5rem);
-        text-align: center;
-        // box-shadow: 0 1.5rem 4rem rgba($color-grey-dark-2, .15);
+    &__icon {
+        font-size: 8rem;
+        font-family: Verdana,sans-serif;
+
+        background-image: linear-gradient(
+                        to right, 
+                        $color-blue-light, 
+                        $color-blue-dark);
+        -webkit-background-clip: text;
+        color: transparent;
     }
-
-    // & h3 {
-    //     margin: 0 3rem;
-    //     padding: 2rem 0;
-    // }
-
-    // & p {
-    //     margin-left: 4rem;
-    //     margin-right: 4rem;
-    //     padding-top: 2rem;
-    //     padding-bottom: 2rem;
-    // }
 
     &__animated {
         transition: all 1s;
@@ -35,5 +33,9 @@
             animation-name: moveInRight;
             animation-duration: .4s;
         }
+    }
+
+    &:hover {
+        transform: scale(1.05);
     }
 }

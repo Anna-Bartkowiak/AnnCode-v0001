@@ -56,8 +56,8 @@ body {
     animation-duration: .4s; }
 
 .heading-secondary {
-  margin: 0 3rem;
-  padding: 2rem 0;
+  margin: 0 6rem;
+  padding: 1rem 0 2rem 0;
   font-size: 2rem;
   font-weight: 300;
   border-bottom: 1px solid;
@@ -89,9 +89,9 @@ body {
     animation-duration: .6s; }
 
 .paragraph-secondary {
-  margin-left: 4rem;
-  margin-right: 4rem;
-  padding-top: 2rem;
+  margin-left: 6.5rem;
+  margin-right: 6.5rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
@@ -154,21 +154,30 @@ body {
 .u-padding-left-big {
   padding-left: 8.5rem !important; }
 
-.about-box__box {
-  background-color: rgba(247, 247, 247, 0.5);
-  text-align: center; }
-
-.about-box__animated {
-  transition: all 1s; }
-  .about-box__animated--1 {
-    animation-name: moveInLeft;
-    animation-duration: .4s; }
-  .about-box__animated--2 {
-    animation-name: moveInBottom;
-    animation-duration: .4s; }
-  .about-box__animated--3 {
-    animation-name: moveInRight;
-    animation-duration: .4s; }
+.about-box {
+  background-color: rgba(247, 247, 247, 0.6);
+  text-align: center;
+  padding-top: 3.5rem;
+  transition: all 0.3s; }
+  .about-box__icon {
+    font-size: 8rem;
+    font-family: Verdana,sans-serif;
+    background-image: linear-gradient(to right, #99ccff, #0073e5);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .about-box__animated {
+    transition: all 1s; }
+    .about-box__animated--1 {
+      animation-name: moveInLeft;
+      animation-duration: .4s; }
+    .about-box__animated--2 {
+      animation-name: moveInBottom;
+      animation-duration: .4s; }
+    .about-box__animated--3 {
+      animation-name: moveInRight;
+      animation-duration: .4s; }
+  .about-box:hover {
+    transform: scale(1.05); }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -371,12 +380,8 @@ body {
         left: 0; }
 
 .section-about {
-  height: calc(100vh - 70px);
-  padding: 2rem 0; }
-  .section-about--margin {
-    margin-top: 70px;
-    margin-left: 3rem;
-    margin-right: 3rem; }
+  margin-top: 70px;
+  padding: 6rem 3rem; }
 
 .section-contact {
   height: calc(100vh - 70px);

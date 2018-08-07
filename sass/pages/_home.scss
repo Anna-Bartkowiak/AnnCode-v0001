@@ -1,32 +1,6 @@
 .section-about {
-    height: $section-height;
-    padding: 2rem 0;
-    // margin-top: $navigation-height;
-
-    &--margin {
-        margin-top: $navigation-height;
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-
-    // &__animated {
-    //     transition: all 1s;
-
-    //     &--1{
-    //         animation-name: moveInLeft;
-    //         animation-duration: .4s;
-    //     }
-
-    //     &--2{
-    //         animation-name: moveInBottom;
-    //         animation-duration: .4s;
-    //     }
-
-    //     &--3{
-    //         animation-name: moveInRight;
-    //         animation-duration: .4s;
-    //     }
-    // }
+    margin-top: $navigation-height;
+    padding: 6rem 3rem;
 }
 
 .section-contact {
