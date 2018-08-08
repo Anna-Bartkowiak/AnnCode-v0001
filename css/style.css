@@ -109,6 +109,9 @@ body {
 .fab {
   font-size: 2.4rem; }
 
+.fas {
+  font-size: 2.2rem; }
+
 .u-margin-bottom-small {
   margin-bottom: 4rem !important; }
 
@@ -162,7 +165,7 @@ body {
   .about-box__icon {
     font-size: 8rem;
     font-family: Verdana,sans-serif;
-    background-image: linear-gradient(to right, #99ccff, #0073e5);
+    background-image: linear-gradient(to right bottom, #99ccff, #0073e5);
     -webkit-background-clip: text;
     color: transparent; }
   .about-box__animated {
@@ -219,8 +222,33 @@ body {
   .btn--none-border:active {
     transform: scale(1); }
 
-.photo-box {
-  height: 100%; }
+.form__paragraph {
+  display: inline-block;
+  font-size: 1.6rem; }
+
+.form__group {
+  margin-bottom: 1.8rem; }
+
+.form__call-mail:not(:last-child) {
+  margin-bottom: 1.5rem; }
+
+.form__input, .form__textarea {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block; }
+  .form__input:focus, .form__textarea:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #99ccff; }
+
+.form__heading-1 {
+  border-bottom: none; }
 
 .section-slideshow {
   position: relative; }
@@ -358,7 +386,7 @@ body {
       left: 50%;
       bottom: 0;
       height: 2px;
-      background-image: linear-gradient(to right, #99ccff, #0073e5); }
+      background-image: linear-gradient(to right bottom, #99ccff, #0073e5); }
     .navigation__link:hover {
       cursor: pointer;
       transform: scale(1.1);
@@ -384,5 +412,13 @@ body {
   padding: 6rem 3rem; }
 
 .section-contact {
-  height: calc(100vh - 70px);
-  margin-top: 70px; }
+  height: 100%;
+  margin-top: 70px;
+  padding-bottom: 5rem;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../img/contact-background.jpg);
+  background-position: center;
+  background-size: cover; }
+  .section-contact .contact {
+    margin: 0;
+    width: 40%;
+    padding: 4rem; }
