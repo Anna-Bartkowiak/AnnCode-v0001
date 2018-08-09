@@ -39,7 +39,7 @@ body {
   color: #777; }
 
 .heading-primary {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 300;
   border-bottom: 1px solid;
   letter-spacing: 0.2rem;
@@ -107,7 +107,7 @@ body {
     animation-duration: .6s; }
 
 .fab {
-  font-size: 2.4rem; }
+  font-size: 2.1rem; }
 
 .fas {
   font-size: 2.2rem; }
@@ -186,14 +186,16 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  line-height: 1.4rem;
-  transition: all .3s; }
+  line-height: 1.6rem;
+  transition: all .3s;
+  position: relative; }
 
 .btn--grey {
+  padding: 1.4rem 1.4rem;
+  font-size: 1.4rem;
   background-color: #777;
   border: 2px solid #777;
   color: #f7f7f7;
-  padding: 1.2rem 1.4rem;
   letter-spacing: 0.2rem;
   box-shadow: inset 0 0 0 rgba(159, 159, 159, 0.7), 0 0 1.5rem rgba(159, 159, 159, 0.9); }
   .btn--grey:hover {
@@ -236,11 +238,12 @@ body {
   font-size: 1.5rem;
   font-family: inherit;
   padding: 1rem 2rem;
+  margin: 0;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.9);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 90%;
+  width: 80%;
   display: block; }
   .form__input:focus, .form__textarea:focus {
     outline: none;
@@ -248,25 +251,11 @@ body {
     border-bottom: 3px solid #99ccff; }
 
 .form__heading-1 {
-  border-bottom: none; }
+  border-bottom: none;
+  padding-left: 1rem; }
 
 .section-slideshow {
   position: relative; }
-  .section-slideshow .w3-left,
-  .section-slideshow .w3-right,
-  .section-slideshow .w3-badge {
-    cursor: pointer; }
-  .section-slideshow .w3-badge {
-    height: 13px;
-    width: 13px;
-    padding: 0; }
-  .section-slideshow .w3-border {
-    border: 1px solid #9f9f9f !important; }
-  .section-slideshow .w3-section {
-    margin-top: 3rem !important;
-    margin-bottom: 3rem !important; }
-  .section-slideshow .w3-container {
-    padding: 0 10rem 0 35rem; }
   .section-slideshow__text {
     width: 100%;
     position: absolute;
@@ -291,12 +280,16 @@ body {
 
 .footer {
   display: block;
-  width: 100%;
-  text-align: center;
+  margin-top: -5rem;
   padding: 1.5rem 2rem;
+  font-size: 1.4rem;
+  text-align: center;
   background-color: #6b6b6b;
-  color: #b2b2b2;
-  margin-top: -5rem; }
+  color: #b2b2b2; }
+  .footer__link, .footer__link:link, .footer__link:visited {
+    text-transform: uppercase;
+    display: inline-block;
+    color: #b2b2b2; }
   .footer__link:hover {
     color: #eee; }
 

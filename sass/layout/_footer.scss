@@ -1,13 +1,23 @@
 .footer {
     display: block;
-    width: 100%;
-    text-align: center;
+    margin-top: -5rem;
     padding: 1.5rem 2rem;
+    font-size: $default-font-size;
+    text-align: center;
     background-color: $color-grey-dark-2;
     color: $color-grey-light-4;
-    margin-top: -5rem;
+    
 
     &__link {
+
+        &,
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            display: inline-block;
+            color: $color-grey-light-4;
+        }
+
         &:hover{
             color: $color-grey-light-2;
         }

@@ -18,11 +18,12 @@
         font-size: 1.5rem;
         font-family: inherit;
         padding: 1rem 2rem;
+        margin: 0;
         border-radius: 3px;
         background-color: rgba($color-white, .9);
         border: none;
         border-bottom: 3px solid transparent;
-        width: 90%;
+        width: 80%;
         display: block;
 
         &:focus {
@@ -38,5 +39,6 @@
 
     &__heading-1 {
         border-bottom: none;
+        padding-left: 1rem;
     }
 }
