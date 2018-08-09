@@ -235,24 +235,42 @@ body {
   margin-bottom: 1.5rem; }
 
 .form__input, .form__textarea {
-  font-size: 1.5rem;
-  font-family: inherit;
+  width: 70%;
+  max-width: 45rem;
   padding: 1rem 2rem;
   margin: 0;
-  border-radius: 3px;
+  display: block;
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  transition: all .3s;
+  border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.9);
   border: none;
-  border-bottom: 3px solid transparent;
-  width: 80%;
-  display: block; }
+  border-bottom: 3px solid transparent; }
   .form__input:focus, .form__textarea:focus {
-    outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #99ccff; }
+  .form__input:focus:invalid, .form__textarea:focus:invalid {
+    border-bottom: 3px solid #ff7f7f; }
+  .form__input::-webkit-input-placeholder, .form__textarea::-webkit-input-placeholder {
+    color: #777; }
+
+.form__label {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  display: block;
+  transition: all .3s; }
 
 .form__heading-1 {
   border-bottom: none;
   padding-left: 1rem; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .section-slideshow {
   position: relative; }
@@ -277,6 +295,8 @@ body {
   .section-slideshow__buttons {
     animation-name: moveInRight;
     animation-duration: .7s; }
+    .section-slideshow__buttons > :not(:last-child) {
+      margin-right: 2rem; }
 
 .footer {
   display: block;
@@ -415,3 +435,10 @@ body {
     margin: 0;
     width: 40%;
     padding: 4rem; }
+    .section-contact .contact__button {
+      margin: 0;
+      width: 70%;
+      font-size: 1.3rem;
+      font-weight: 400;
+      letter-spacing: .5rem;
+      color: #6b6b6b; }

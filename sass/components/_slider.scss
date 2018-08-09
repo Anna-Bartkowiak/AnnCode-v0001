@@ -58,5 +58,9 @@
     &__buttons {
         animation-name: moveInRight;
         animation-duration: .7s;
+
+        & > :not(:last-child) {
+            margin-right: 2rem;
+        }
     }
 }
