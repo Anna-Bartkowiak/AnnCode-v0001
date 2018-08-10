@@ -14,6 +14,22 @@
         <link rel="stylesheet" href="css/style.css">
 
         <title> AnnCode - Front end developer | Coding responsive websites - html5, css3, javascript, sass, bem, node.js. </title>
+
+        <script>
+        $(document).ready(function() {
+    $("html").on("submit","#contact_form",function(e){
+      e.preventDefault();
+      $("#send_form_status").html('').hide();
+      var data=$("#contact_form").serialize();
+      $.post("/send_form.php",data,function(res){
+        $("#send_form_status").html(res.msg).show();
+        if(res.status==1){ 
+          $("#contact_form")[0].reset();
+        } 
+      });
+    });
+  });
+        </script>
     </head>
 
     <body>
@@ -156,8 +172,9 @@
             <section id="contact" class="section-contact">
                 <div class="row">
                     <div class="contact">
-                        <form action="#" class="form" id="textarea-form">
-                            <div class="form__info u-margin-bottom-small">
+                        <div id="send_form_status"></div>
+                        <form class="form" action="/send_form.php" method="post" id="contact_form">
+                            <div class="form__group">
                                 <h1 class="heading-primary u-padding-bottom-medium form__heading-1">Anna Bartkowiak / Junior Front-end Developer</h1>
                                 <div class="form__call-mail">
                                     <a href="http://github.com/Anna-Bartkowiak" target="_blank" class="btn btn--white btn--none-border"><i class="fas fa-envelope"></i></a>
@@ -181,13 +198,13 @@
                             </div>
             
                             <div class="form__group">
-                                <textarea form="textarea-form" class="form__textarea" name="taname" id="taid" rows="6" cols="60" wrap="soft" placeholder="Your message"></textarea>
+                                <textarea form="textarea-form" class="form__textarea" id="message" name="message" rows="4" cols="60" wrap="soft" placeholder="Your message"></textarea>
+                            </div>
+
+                            <div class="form__group">
+                                <button type="submit" class="btn btn--white btn__submit submit">submit</button>
                             </div>
                         </form>
-
-                        <div class="contact__button">
-                            <a href="#" target="_blank" class="btn btn--white">submit</a>
-                        </div>
                     </div>
                 </div>
                 
@@ -198,6 +215,8 @@
             <p class="footer__copyright">Design <a href="http://adambartoszewski.pl/" target="_blank" class="footer__link">adrg</a>. Copyright 2018 &copy; by AnnCode
             </p>
         </footer>
+
         <script src="js/script.js"></script>
+        <script src="js/contact-form.js"></script>
     </body>
 </html>

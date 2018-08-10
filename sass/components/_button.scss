@@ -48,6 +48,14 @@
         }
     }
 
+    &__submit {
+        margin: 0;
+        font-size: 1.3rem;
+        font-weight: 400;
+        letter-spacing: .4rem;
+        color: $color-grey-dark-2;
+    }
+
     &--none-border {
         border: none;
         border-radius: 50%;
