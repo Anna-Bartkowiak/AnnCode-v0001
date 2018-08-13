@@ -15,20 +15,21 @@
 
         <title> AnnCode - Front end developer | Coding responsive websites - html5, css3, javascript, sass, bem, node.js. </title>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
         <script>
         $(document).ready(function() {
-    $("html").on("submit","#contact_form",function(e){
-      e.preventDefault();
-      $("#send_form_status").html('').hide();
-      var data=$("#contact_form").serialize();
-      $.post("/send_form.php",data,function(res){
-        $("#send_form_status").html(res.msg).show();
-        if(res.status==1){ 
-          $("#contact_form")[0].reset();
-        } 
-      });
-    });
-  });
+            $("html").on("submit","#contact_form",function(e){
+                e.preventDefault();
+                $("#send_form_status").html('').hide();
+                var data=$("#contact_form").serialize();
+                $.post("/send_form.php",data,function(res){
+                    $("#send_form_status").html(res.msg).show();
+                    if(res.status==1){ 
+                        $("#contact_form")[0].reset();
+                    } 
+                });
+            });
+        });
         </script>
     </head>
 
@@ -40,9 +41,9 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li id="#projects" class="navigation__item navigation__item--current"><a href="#" data-hover="projects" class="navigation__link">projects</a></li>
-                    <li id="#about" class="navigation__item"><a href="#" data-hover="about" class="navigation__link">about</a></li>
-                    <li id="#contact" class="navigation__item"><a href="#" data-hover="contact" class="navigation__link">contact</a></li>
+                    <li class="navigation__item navigation__item--current"><a href="#projects" data-hover="projects" class="navigation__link active">projects</a></li>
+                    <li class="navigation__item"><a href="#about" data-hover="about" class="navigation__link">about</a></li>
+                    <li class="navigation__item"><a href="#contact" data-hover="contact" class="navigation__link">contact</a></li>
                 </ul>
             </nav>
 
@@ -133,12 +134,14 @@
                     </div>
                 </div>
 
-                <!-- <div class="w3-center w3-container w3-section w3-large w3-text-grey w3-display-bottommiddle" style="width:100%">
-                    <div class="w3-right w3-hover-text-dark-grey" onclick="plusDivs(1)">next  &rarr;</div>
-                    <span class="w3-badge demo w3-border w3-transparent w3-hover-grey" onclick="currentDiv(1)"></span>
-                    <span class="w3-badge demo w3-border w3-transparent w3-hover-grey" onclick="currentDiv(2)"></span>
-                    <span class="w3-badge demo w3-border w3-transparent w3-hover-grey" onclick="currentDiv(3)"></span>
-                </div> -->
+                <div class="section-slideshow__container">
+                    <div class="dots">
+                        <span class="dot-button demo border transparent hover-grey" onclick="currentDiv(1)"></span>
+                        <span class="dot-button demo border transparent hover-grey" onclick="currentDiv(2)"></span>
+                        <span class="dot-button demo border transparent hover-grey" onclick="currentDiv(3)"></span>
+                    </div>
+                    <div class="arr right hover-text-dark-grey" onclick="plusDivs(1)">next  &rarr;</div>
+                </div>
             </section>
 
             <section id="about" class="section-about">
