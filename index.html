@@ -40,8 +40,8 @@
             </div>
 
             <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item navigation__item--current"><a href="#projects" data-hover="projects" class="navigation__link active">projects</a></li>
+                <ul class="navigation__list" id="myNav">
+                    <li class="navigation__item navigation__item"><a href="#projects" data-hover="projects" class="navigation__link active">projects</a></li>
                     <li class="navigation__item"><a href="#about" data-hover="about" class="navigation__link">about</a></li>
                     <li class="navigation__item"><a href="#contact" data-hover="contact" class="navigation__link">contact</a></li>
                 </ul>
@@ -136,11 +136,11 @@
 
                 <div class="section-slideshow__container">
                     <div class="dots">
-                        <span class="dot-button demo border transparent hover-grey" onclick="currentDiv(1)"></span>
-                        <span class="dot-button demo border transparent hover-grey" onclick="currentDiv(2)"></span>
-                        <span class="dot-button demo border transparent hover-grey" onclick="currentDiv(3)"></span>
+                        <span class="dot dot-button demo" onclick="currentDiv(1)"></span>
+                        <span class="dot dot-button demo" onclick="currentDiv(2)"></span>
+                        <span class="dot dot-button demo" onclick="currentDiv(3)"></span>
                     </div>
-                    <div class="arr right hover-text-dark-grey" onclick="plusDivs(1)">next  &rarr;</div>
+                    <div class="next right hover-text-dark-grey" onclick="plusDivs(1)">next  &rarr;</div>
                 </div>
             </section>
 
@@ -219,6 +219,7 @@
             </p>
         </footer>
 
+        <script src="js/nav-active.js"></script>
         <script src="js/script.js"></script>
         <script src="js/contact-form.js"></script>
     </body>

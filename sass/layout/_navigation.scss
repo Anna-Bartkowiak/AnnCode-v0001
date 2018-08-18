@@ -43,10 +43,6 @@
     &__item {
         display: inline-block;
         padding: 0 2rem;
-
-        &--current {
-
-        }
     }
 
     &__icon {
@@ -67,21 +63,17 @@
     }
 
     &__link {
-        height: inherit;
-        display: inline-block;
-
-        text-decoration: none;
-        text-transform: uppercase;
-        list-style: outside none none;
-
-        position: relative;
-        padding: .5rem 0;
-
-        transition: all .2s;
-
-        &,
+        
         &:link,
         &:visited {
+            height: inherit;
+            display: inline-block;
+            position: relative;
+            padding: .5rem 0;
+            text-decoration: none;
+            text-transform: uppercase;
+            list-style: outside none none;
+            transition: all .2s;
             color: $color-grey-dark-1;
         }
 
@@ -93,48 +85,47 @@
             left: 50%;
             bottom: 0;
             height: 2px;
-            // background: $color-grey-dark-1;
-
             background-image: linear-gradient(
                             to right bottom, 
                             $color-blue-light, 
                             $color-blue-dark);
-          }
+        }
         
-        &:hover {
+        &:hover,
+        &:active,
+        &:focus {
             cursor: pointer;
             transform: scale(1.1);
             letter-spacing: .6rem;
-
             background-image: linear-gradient(
                             to right, 
                             $color-blue-light, 
                             $color-blue-dark);
             -webkit-background-clip: text;
             color: transparent;
+            border: none;
 
             &:after {
                 width: 100%;
                 left: 0;
             }
         }
+    }
 
-        &:active,
-        &:focus {
-            transform: scale(1.1);
-            letter-spacing: .6rem;
+    & .active {
+        cursor: pointer;
+        transform: scale(1.1);
+        letter-spacing: .6rem;
+        background-image: linear-gradient(
+                        to right, 
+                        $color-blue-light, 
+                        $color-blue-dark);
+        -webkit-background-clip: text;
+        color: transparent;
 
-            background-image: linear-gradient(
-                            to right, 
-                            $color-blue-light, 
-                            $color-blue-dark);
-            -webkit-background-clip: text;
-            color: transparent;
-
-            &:after {
-                width: 100%;
-                left: 0;
-            }
+        &:after {
+            width: 100%;
+            left: 0;
         }
     }
 }
