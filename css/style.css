@@ -107,10 +107,12 @@ body {
     animation-duration: .6s; }
 
 .fab {
-  font-size: 2.1rem; }
+  font-size: 2.1rem;
+  backface-visibility: hidden; }
 
 .fas {
-  font-size: 2.2rem; }
+  font-size: 2.1rem;
+  backface-visibility: hidden; }
 
 .u-margin-bottom-small {
   margin-bottom: 4rem !important; }
@@ -188,7 +190,7 @@ body {
   text-decoration: none;
   display: inline-block;
   line-height: 1.6rem;
-  transition: all .3s;
+  transition: all .4s;
   position: relative; }
 
 .btn--grey {
@@ -229,19 +231,37 @@ body {
   border-radius: 50%;
   box-shadow: none; }
   .btn--none-border:hover {
-    transform: scale(1.2); }
+    transform: scale(1.05); }
   .btn--none-border:active {
     transform: scale(1); }
-
-.form__paragraph {
-  display: inline-block;
-  font-size: 1.6rem; }
 
 .form__group {
   margin-bottom: 1.3rem; }
 
 .form__call-mail:not(:last-child) {
   margin-bottom: 1.3rem; }
+
+.form__anchor:link, .form__anchor:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #777;
+  transition: all .4s; }
+
+.form__anchor:hover, .form__anchor:focus {
+  text-decoration-line: underline;
+  transform: scale(1.05); }
+
+.form__icons {
+  padding: .8rem 1rem;
+  position: relative;
+  display: inline-block;
+  line-height: 1.6rem;
+  color: #777;
+  border-radius: 50%;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .4s; }
 
 .form__input, .form__textarea {
   width: 70%;
@@ -283,9 +303,12 @@ body {
   visibility: hidden;
   transform: translateY(-2.8rem); }
 
+.photo-box {
+  width: 100%;
+  height: 100%; }
+
 .section-slideshow {
-  position: relative;
-  padding-top: 1rem; }
+  position: relative; }
   .section-slideshow__container {
     width: 38%;
     height: 3rem;
@@ -333,13 +356,12 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
   .section-slideshow__photo {
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 100%;
+    border: 5px solid #b2b2b2;
     animation-name: moveInLeft;
     animation-duration: .6s; }
   .section-slideshow__mySlides {
@@ -460,7 +482,8 @@ body {
     background-image: linear-gradient(to right, #99ccff, #0073e5);
     -webkit-background-clip: text;
     color: transparent;
-    border: none; }
+    border: none;
+    backface-visibility: hidden; }
     .navigation__link:hover:after, .navigation__link:active:after, .navigation__link:focus:after {
       width: 100%;
       left: 0; }

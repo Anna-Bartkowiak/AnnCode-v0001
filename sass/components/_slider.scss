@@ -1,6 +1,6 @@
 .section-slideshow {
     position: relative;
-    padding-top: 1rem;
+    // padding-top: 1rem;
 
     &__container {
         width: 38%;
@@ -53,10 +53,11 @@
 
     .mySlides {
         display:none;
+        // -webkit-backface-visibility: hidden;
+        // backface-visibility: hidden;
+        
     }
-
     
-
     .next{
         float:right;
     }
@@ -66,15 +67,19 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 
     &__photo {
         width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        height: 100%;
+        border: 5px solid $color-grey-light-4;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // -webkit-transform: translate(-50%, -50%);
+        // transform: translate(-50%, -50%);
         animation-name: moveInLeft;
         animation-duration: .6s;
     }

@@ -7,7 +7,7 @@
         display: inline-block;
         // font-size: 1.4rem;
         line-height: 1.6rem;
-        transition: all .3s;
+        transition: all .4s;
         position: relative;
         // background-color .3s, box-shadow .3s, color .3s;
     }
@@ -63,7 +63,7 @@
         box-shadow: none;
 
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.05);
         }
 
         &:active {
