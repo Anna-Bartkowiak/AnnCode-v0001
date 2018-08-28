@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px;   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800 + :        Big desktop
+
+Breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -28,6 +45,15 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -308,11 +334,12 @@ body {
   height: 100%; }
 
 .section-slideshow {
-  position: relative; }
+  position: relative;
+  padding-top: 1rem; }
   .section-slideshow__container {
     width: 38%;
     height: 3rem;
-    max-width: 160rem;
+    max-width: 600px;
     padding: 5rem 11rem;
     font-size: 1.6rem;
     color: #777;
@@ -360,8 +387,11 @@ body {
     transform: translate(-50%, -50%); }
   .section-slideshow__photo {
     width: 100%;
-    height: 100%;
-    border: 5px solid #b2b2b2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     animation-name: moveInLeft;
     animation-duration: .6s; }
   .section-slideshow__mySlides {
