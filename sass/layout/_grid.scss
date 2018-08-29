@@ -1,9 +1,9 @@
 .row {
     max-width: $grid-width;
 
-    // &:not(:last-child) {
-    //     margin-bottom: $gutter-vertical;
-    // }
+    @include respond(tab-port) {
+        max-width: 80rem;
+    }
 
     @include clearfix;
 
@@ -12,6 +12,14 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond(tab-port) {
+                margin-right: 0;
+            }
+        }
+
+        @include respond(tab-port) {
+            width: 100% !important;
         }
     }
 }
@@ -27,17 +35,3 @@
     height: 100%;
     position: relative;
 }
-
-// .col-2-of-3 {
-//     width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
-// }
-
-
-
-// .col-2-of-8 {
-//     width: calc(2 * ((100% - 7 * #{$gutter-horizontal}) / 8) + #{$gutter-horizontal});
-// }
-
-// .col-4-of-8 {
-//     width: calc(4 * ((100% - 7 * #{$gutter-horizontal}) / 8) + 3 * #{$gutter-horizontal});
-// }

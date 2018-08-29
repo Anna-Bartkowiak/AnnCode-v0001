@@ -1,5 +1,5 @@
 $default-font-size: 1.4rem;
-$default-letter-spacing: 0.2rem;
+$default-letter-spacing: .2rem;
 
 // GRID
 
@@ -26,11 +26,8 @@ $color-grey-light-4: #b2b2b2;
 $color-grey-dark-1: #777;
 $color-grey-dark-2: #6b6b6b;
 
-// $color-gradient: linear-gradient(
-//     to right, 
-//     $color-blue-light, 
-//     $color-blue-dark);
-
 // Height section
 $navigation-height: 70px;
+$navigation-height-small: 55px;
 $section-height: calc(100vh - 70px);
+$section-height: calc(100vh - 55px);

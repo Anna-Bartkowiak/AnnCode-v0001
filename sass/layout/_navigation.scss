@@ -11,12 +11,25 @@
     z-index: 2000;
     background-color: $color-white;
 
+    @include respond(tab-port) {
+        height: $navigation-height-small;
+        font-size: 1.3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 1.2rem;
+    } 
+
     &__logo-box {
         position: absolute;
         top: 1.9rem;
         left: 1.5rem;
         cursor: pointer;
         z-index: 3000;
+
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &__logo {
@@ -38,18 +51,26 @@
         line-height: 1.6;
         // float: right;
         height: inherit;
+
+        @include respond(phone) {
+            letter-spacing: .2rem;
+        }
     }
 
     &__item {
         display: inline-block;
         padding: 0 2rem;
+
+        @include respond(phone) {
+            padding: 0 1.5rem;
+        }
     }
 
     &__icon {
         // height: 4rem;
         width: 12rem;
         position: absolute;
-        top: 1.7rem;
+        top: 2.2rem;
         right: 1rem;
         cursor: pointer;
         z-index: 3000;
@@ -59,6 +80,14 @@
         
         &:not(:last-child) {
             padding-right: 2rem;
+        }
+
+        @include respond(tab-port) {
+            top: 1.5rem;
+        }
+
+        @include respond(phone) {
+            display: none;
         }
     }
 

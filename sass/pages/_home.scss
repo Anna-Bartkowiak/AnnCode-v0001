@@ -2,6 +2,11 @@
     margin-top: $navigation-height;
     padding: 10rem 3rem;
     border-top: 1px solid $color-grey-light-2;
+
+    @include respond (tab-port) {
+        margin-top: $navigation-height-small;
+        padding: 5rem 2rem;
+    }
 }
 
 .section-contact {
@@ -21,6 +26,16 @@
     & .contact {
         margin: 0;
         width: 40%;
-        padding: 4rem ;
+        padding: 4rem;
+    }
+
+    @include respond (tab-port) {
+        margin-top: $navigation-height-small;
+        padding-top: 3rem;
+
+        & .contact {
+            width: 100%;
+            padding: 4rem;
+        }
     }
 }
