@@ -1,0 +1,14 @@
+.jumbotron-rwd {
+    display: none;
+
+    @include respond(tab-port) {
+        display: inline-block;
+        height: 20rem;
+        width: 100%;
+        margin-top: 55px;
+        position: relative;
+        background-color: $color-grey-light-4;
+        color: $color-grey-light-1;
+
+    }
+}

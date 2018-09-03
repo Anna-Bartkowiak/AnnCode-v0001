@@ -2,6 +2,10 @@
     position: relative;
     padding-top: 1rem;
 
+    @include respond(tab-port) {
+        padding-top: 0;
+    }
+
     &__container {
         width: 38%;
         height: 3rem;
@@ -12,6 +16,10 @@
         position: absolute;
         bottom: 0;
         right: 0;
+
+        @include respond(tab-port) {
+            display: none;
+        }
 
         & .dots,
         & .next {
@@ -53,8 +61,10 @@
 
     .mySlides {
         display:none;
-        // -webkit-backface-visibility: hidden;
-        // backface-visibility: hidden;
+        
+        @include respond(tab-port) {
+            display: inline-block;
+        }
         
     }
     
@@ -69,6 +79,20 @@
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+
+        @include respond(tab-port) {
+            display: inline-block;
+            position: relative;
+            top: 0;
+            left: 0;
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+            padding-top: 6rem;
+        }
+
+        @include respond(phone) {
+            padding-top: 4rem;
+        }
     }
 
     &__photo {
@@ -82,12 +106,27 @@
         transform: translate(-50%, -50%);
         animation-name: moveInLeft;
         animation-duration: .6s;
+
+        @include respond(tab-port) {
+            display: inline-block;
+            position: relative;
+            top: 0;
+            left: 0;
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
     }
 
     &__mySlides {
         height: $section-height;
         margin-top: $navigation-height;
         display: none;
+
+        @include respond(tab-port) {
+            display: inline-block;
+            height: 100%;
+            margin-top: 4rem;
+        }
     }
 
     &__buttons {
@@ -96,6 +135,10 @@
 
         & > :not(:last-child) {
             margin-right: 2rem;
+        }
+
+        @include respond(phone) {
+            margin-bottom: 2rem !important;
         }
     }
 }
