@@ -1,10 +1,18 @@
 .form {
     &__group {
         margin-bottom: 1.3rem;
+
+        &:last-child {
+            margin: 3rem 0;
+        }
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
     }
 
-    &__call-mail:not(:last-child) {
-        margin-bottom: 1.3rem;
+    &__call-mail {
+        margin-bottom: 1.5rem;
     }
 
     &__anchor {
@@ -53,7 +61,10 @@
         background-color: rgba($color-white, .9);
         border: none;
         border-bottom: 3px solid transparent;
-        
+
+        @include respond(tab-port) {
+            margin: 0 auto;
+        }
 
         &:focus {
             border: none;
@@ -78,11 +89,24 @@
         margin-top: .7rem;
         display: block;
         transition: all .3s;
+
+        @include respond(tab-port) {
+            text-align: left;
+            width: 58%;
+            margin: 0 auto;
+        }
+
+        @include respond(phone) {
+            text-align: left;
+            width: 68%;
+            margin: 0 auto;
+        }
     }
 
     &__heading-1 {
         border-bottom: none;
         padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     &__input:placeholder-shown + &__label {

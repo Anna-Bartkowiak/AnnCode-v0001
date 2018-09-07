@@ -1,7 +1,7 @@
 .section-about {
     margin-top: $navigation-height;
-    padding: 10rem 3rem;
-    border-top: 1px solid $color-grey-light-2;
+    padding: 10rem 3rem 3rem 3rem;
+    border-top: 2px dashed $color-grey-light-2;
 
     @include respond (tab-port) {
         margin-top: $navigation-height-small;
@@ -15,8 +15,8 @@
     padding-top: 6rem;
     padding-bottom: 5rem;
     background-image: linear-gradient(105deg, 
-                                    rgba($color-white, .9) 0%,
-                                    rgba($color-white, .9) 50%, 
+                                    rgba($color-white, .8) 0%,
+                                    rgba($color-white, .8) 40%, 
                                     transparent 100%),
                         url(../../img/contact-background.jpg);
     background-position: center;
@@ -25,8 +25,8 @@
 
     @include respond(tab-port) {
         background-image: linear-gradient(105deg, 
-                                    rgba($color-white, .9) 0%,
-                                    rgba($color-white, .9) 100%),
+                                    rgba($color-white, .8) 0%,
+                                    rgba($color-white, .8) 100%),
                         url(../../img/contact-background.jpg);
     }
 
@@ -42,7 +42,7 @@
 
         & .contact {
             width: 100%;
-            padding: 4rem;
+            padding: 0;
         }
     }
 }

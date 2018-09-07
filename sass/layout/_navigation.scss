@@ -124,8 +124,8 @@
         &:active,
         &:focus {
             cursor: pointer;
-            transform: scale(1.1);
-            letter-spacing: .6rem;
+            transform: scale(1.125);
+            // letter-spacing: .6rem;
             background-image: linear-gradient(
                             to right, 
                             $color-blue-light, 
@@ -145,8 +145,8 @@
 
     & .active {
         cursor: pointer;
-        transform: scale(1.1);
-        letter-spacing: .6rem;
+        transform: scale(1.125);
+        // letter-spacing: .6rem;
         background-image: linear-gradient(
                         to right, 
                         $color-blue-light, 
