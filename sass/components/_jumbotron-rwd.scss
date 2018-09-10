@@ -7,8 +7,13 @@
         width: 100%;
         margin-top: 55px;
         position: relative;
-        background-color: $color-grey-light-4;
-        color: $color-grey-light-1;
+        // background-color: $color-blue-dark;
+        background-image: linear-gradient(
+                            to right bottom,
+                            #7aa3cc,
+                            #94bee7);
+        // color: $color-grey-light-1;
+        color: white;
     }
 
     @include respond(phone) {
