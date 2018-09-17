@@ -5,7 +5,7 @@
         <meta name="Description" content="AnnCode - Front end developer | Coding responsive websites - html5, css3, javascript, sass, node.js.">
         <meta name="Keywords" content="AnnCode, Anna Bartkowiak, Coding responsive websites, rwd, html5, css3, javascript, sass, node.js, front end developer, web developer, portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400|Roboto:300i,400i" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -15,8 +15,8 @@
 
         <title> AnnCode - Front end developer | Coding responsive websites - html5, css3, javascript, sass, bem, node.js. </title>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-        <script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- <script>
         $(document).ready(function() {
             $("html").on("submit","#contact_form",function(e){
                 e.preventDefault();
@@ -30,7 +30,7 @@
                 });
             });
         });
-        </script>
+        </script> -->
     </head>
 
     <body>
@@ -43,7 +43,7 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list" id="myNav">
-                    <li class="navigation__item navigation__item"><a href="#projects" data-hover="projects" class="navigation__link active">projects</a></li>
+                    <li class="navigation__item"><a href="#projects" data-hover="projects" class="navigation__link active">projects</a></li>
                     <li class="navigation__item"><a href="#about" data-hover="about" class="navigation__link">about</a></li>
                     <li class="navigation__item"><a href="#contact" data-hover="contact" class="navigation__link">contact</a></li>
                 </ul>
@@ -58,10 +58,10 @@
         <main>
             <!-- SLIDESHOW CONTAINER -->
             <section id="projects" class="section-slideshow">
-                <div class="jumbotron-rwd">
+                <!-- <div class="jumbotron-rwd">
                     <p class="heading-primary heading-primary--main">Hi, I'm Ania and I want to grow as a front-end developer. I am meticulous, empathetic and I like puzzle :)</p>
                     <!-- <p class="heading-primary heading-primary--main">scroll-down</p> -->
-                </div>
+                <!--</div> -->
 
                 <div class="row mySlides section-slideshow__mySlides section-slideshow__fade">
                     <div class="col-1-of-2">
@@ -78,7 +78,7 @@
                         <div class="section-slideshow__text">
                             <h3 class="heading-primary heading-primary__animated--right u-margin-bottom-medium u-padding-bottom-medium u-margin-left-medium u-margin-right-medium">Website for UX designer</h3>
                             <p class="paragraph paragraph__animated--right u-margin-bottom-medium u-margin-left-big u-margin-right-medium">
-                                Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt? Libero itaque soluta eveniet nulla ipsa recusandae veritatis, in nisi ipsum maxime iste aperiam atque exercitationem? Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt?
+                                Portfolio created using html5, css3, mixitup plugin and simple javascript functions.
                             </p>
 
                             <div class="section-slideshow__buttons u-margin-bottom-medium u-margin-left-medium .u-margin-right-medium">
@@ -104,9 +104,9 @@
     
                         <div class="col-1-of-2">
                             <div class="section-slideshow__text">
-                                <h3 class="heading-primary heading-primary__animated--right u-margin-bottom-medium u-padding-bottom-medium u-margin-left-medium u-margin-right-medium">Website for a cosmetic salon</h3>
+                                <h3 class="heading-primary heading-primary__animated--right u-margin-bottom-medium u-padding-bottom-medium u-margin-left-medium u-margin-right-medium">Landing page for a cosmetic salon</h3>
                                 <p class="paragraph paragraph__animated--right u-margin-bottom-medium u-margin-left-big u-margin-right-medium">
-                                    Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt? Libero itaque soluta eveniet nulla ipsa recusandae veritatis, in nisi ipsum maxime iste aperiam atque exercitationem? Ipsum dolor sit amet consectetur adipisicing elit. Iure exercitationem quod quam repudiandae incidunt?
+                                    In this project I leveraged Node.js tools like NPM and Gulp to save time by automating tasks, and I used BEM & PostCSS to keep my styles organized and manageable.
                                 </p>
     
                                 <div class="section-slideshow__buttons u-margin-bottom-medium u-margin-left-medium u-margin-right-medium">
@@ -175,7 +175,7 @@
                         <div class="about-box about-box__animated--3">
                             <i class="about-box__icon icon-basic-world"></i>
                             <h3 class="heading-secondary heading-secondary__animated--right">My plans</h3>
-                            <p class="paragraph-secondary paragraph-secondary__animated--right">I want to have a javascript and node.js superpower so old mistakes are gone, I won't do them no more, I turned them into lessons. You just gona see AnnCode coming. I just keep elevating. Just upgrading and I need you to be one step closer to the goal. If you </p>
+                            <p class="paragraph-secondary paragraph-secondary__animated--right">I want to grow as a front-end developer. I am meticulous, empathetic and I like puzzle. I want to have a javascript and node.js superpower so old mistakes are gone, I turned them into lessons. You just gona see AnnCode coming. I just keep elevating. Just upgrading and I need you to be one step closer to the goal.  </p>
                         </div>
                     </div>
                 </div>
@@ -184,7 +184,6 @@
             <section id="contact" class="section-contact">
                 <div class="row">
                     <div class="contact">
-                        <div id="send_form_status"></div>
                         <form class="form" action="/send_form.php" method="post" id="contact_form">
                             <div class="form__group form__info">
                                 <h1 class="heading-primary u-padding-bottom-big form__heading-1">Anna Bartkowiak / Junior Front-end Developer</h1>
@@ -218,6 +217,8 @@
                             <div class="form__group">
                                 <textarea form="textarea-form" class="form__textarea" id="message" name="message" rows="4" cols="60" wrap="soft" placeholder="Your message"></textarea>
                             </div>
+
+                            <div id="send_form_status"></div>
 
                             <div class="form__group">
                                 <button type="submit" class="btn btn__submit submit">submit</button>

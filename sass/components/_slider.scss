@@ -1,9 +1,8 @@
 .section-slideshow {
     position: relative;
-    padding-top: 1rem;
 
     @include respond(tab-port) {
-        padding-top: 0;
+        padding-top: 5rem;
     }
 
     &__container {

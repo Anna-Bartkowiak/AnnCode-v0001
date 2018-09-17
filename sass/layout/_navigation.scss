@@ -34,6 +34,11 @@
 
     &__logo {
         height: 3.5rem;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all .3s;
+        }
     }
 
     &__nav {
@@ -120,9 +125,7 @@
                             $color-blue-dark);
         }
         
-        &:hover,
-        &:active,
-        &:focus {
+        &:hover {
             cursor: pointer;
             transform: scale(1.125);
             // letter-spacing: .6rem;

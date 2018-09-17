@@ -461,27 +461,11 @@ body {
   visibility: hidden;
   transform: translateY(-2.8rem); }
 
-.jumbotron-rwd {
-  display: none; }
-  @media only screen and (max-width: 56.25em) {
-    .jumbotron-rwd {
-      display: inline-block;
-      height: 30rem;
-      width: 100%;
-      margin-top: 55px;
-      position: relative;
-      background-image: linear-gradient(to right bottom, #7aa3cc, #94bee7);
-      color: white; } }
-  @media only screen and (max-width: 37.5em) {
-    .jumbotron-rwd {
-      height: 20rem; } }
-
 .section-slideshow {
-  position: relative;
-  padding-top: 1rem; }
+  position: relative; }
   @media only screen and (max-width: 56.25em) {
     .section-slideshow {
-      padding-top: 0; } }
+      padding-top: 5rem; } }
   .section-slideshow__container {
     width: 38%;
     height: 3rem;
@@ -664,6 +648,9 @@ body {
         display: none; } }
   .navigation__logo {
     height: 3.5rem; }
+    .navigation__logo:hover {
+      transform: scale(1.1);
+      transition: all .3s; }
   .navigation__nav {
     width: 100%;
     text-align: center;
@@ -721,7 +708,7 @@ body {
     bottom: 0;
     height: 2px;
     background-image: linear-gradient(to right bottom, #99ccff, #0073e5); }
-  .navigation__link:hover, .navigation__link:active, .navigation__link:focus {
+  .navigation__link:hover {
     cursor: pointer;
     transform: scale(1.125);
     background-image: linear-gradient(to right, #99ccff, #0073e5);
@@ -729,7 +716,7 @@ body {
     color: transparent;
     border: none;
     backface-visibility: hidden; }
-    .navigation__link:hover:after, .navigation__link:active:after, .navigation__link:focus:after {
+    .navigation__link:hover:after {
       width: 100%;
       left: 0; }
   .navigation .active {
@@ -756,7 +743,7 @@ body {
   margin-top: 70px;
   padding-top: 6rem;
   padding-bottom: 5rem;
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 100%), url(../../img/contact-background.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 60%), url(../../img/contact-background.jpg);
   background-position: center;
   background-size: cover;
   border-top: 1px solid #eee; }
