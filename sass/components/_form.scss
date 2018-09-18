@@ -1,18 +1,31 @@
 .form {
     &__group {
-        // margin-bottom: 1.3rem;
+        margin-bottom: 1.3rem;
+
+        @include respond(tab-port) {
+            // text-align: center;
+        }
+    }
+
+    &__group:last-child {
+        margin: 6.5rem 0 2rem 0;
 
         @include respond(tab-port) {
             text-align: center;
         }
     }
 
-    &__group:last-child {
-        margin: 5.5rem 0 2rem 0;
-    }
-
     &__info {
         margin-bottom: 4rem;
+        
+        @include respond(tab-port) {
+            width: 62%;
+            margin: 0 auto 6rem auto;
+        }
+        
+        @include respond(phone) {
+            width: 75%;
+        }
     }
 
     &__call-mail {
@@ -38,7 +51,7 @@
     }
 
     &__icons {
-        padding: .8rem 1rem;
+        padding: 1rem 1rem;
         position: relative;
         display: inline-block;
         line-height: 1.6rem;
@@ -90,6 +103,7 @@
         font-size: 1.2rem;
         margin-left: 2rem;
         margin-top: .7rem;
+        margin-bottom: 1rem;
         display: block;
         transition: all .3s;
 

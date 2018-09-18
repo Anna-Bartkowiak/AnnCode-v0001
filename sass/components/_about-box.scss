@@ -7,7 +7,10 @@
     &:last-child {
         padding-bottom: 3.5rem;
     }
-    // height: 54rem;
+
+    @include respond(tab-port) {
+        text-align: left;
+    }    
 
     &__icon {
         font-size: 8rem;
@@ -22,6 +25,11 @@
 
         @include respond(tab-port) {
             font-size: 6rem;
+            margin-left: 6rem;
+        }
+
+        @include respond(phone) {
+            margin-left: 4.5rem;
         }
     }
 

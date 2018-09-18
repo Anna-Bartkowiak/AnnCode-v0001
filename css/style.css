@@ -255,10 +255,10 @@ body {
   padding-bottom: .4rem !important; }
 
 .u-padding-bottom-medium {
-  padding-bottom: 1rem !important; }
+  padding-bottom: 2rem !important; }
 
 .u-padding-bottom-big {
-  padding-bottom: 3rem !important; }
+  padding-bottom: 5rem !important; }
 
 .u-padding-left-small {
   padding-left: 4.5rem !important; }
@@ -276,6 +276,9 @@ body {
   transition: all 0.3s; }
   .about-box:last-child {
     padding-bottom: 3.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .about-box {
+      text-align: left; } }
   .about-box__icon {
     font-size: 8rem;
     font-family: Verdana,sans-serif;
@@ -284,7 +287,11 @@ body {
     color: transparent; }
     @media only screen and (max-width: 56.25em) {
       .about-box__icon {
-        font-size: 6rem; } }
+        font-size: 6rem;
+        margin-left: 6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .about-box__icon {
+        margin-left: 4.5rem; } }
   .about-box__animated {
     transition: all 1s; }
     .about-box__animated--1 {
@@ -373,15 +380,24 @@ body {
   .btn--none-border:active {
     transform: scale(1); }
 
-@media only screen and (max-width: 56.25em) {
-  .form__group {
-    text-align: center; } }
+.form__group {
+  margin-bottom: 1.3rem; }
 
 .form__group:last-child {
-  margin: 5.5rem 0 2rem 0; }
+  margin: 6.5rem 0 2rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .form__group:last-child {
+      text-align: center; } }
 
 .form__info {
   margin-bottom: 4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .form__info {
+      width: 62%;
+      margin: 0 auto 6rem auto; } }
+  @media only screen and (max-width: 37.5em) {
+    .form__info {
+      width: 75%; } }
 
 .form__call-mail {
   margin-bottom: 1.5rem; }
@@ -398,7 +414,7 @@ body {
   transform: scale(1.05); }
 
 .form__icons {
-  padding: .8rem 1rem;
+  padding: 1rem 1rem;
   position: relative;
   display: inline-block;
   line-height: 1.6rem;
@@ -439,6 +455,7 @@ body {
   font-size: 1.2rem;
   margin-left: 2rem;
   margin-top: .7rem;
+  margin-bottom: 1rem;
   display: block;
   transition: all .3s; }
   @media only screen and (max-width: 56.25em) {
@@ -565,7 +582,6 @@ body {
 
 .footer {
   display: block;
-  margin-top: -5rem;
   padding: 1.7rem 2rem;
   font-size: 1.4rem;
   text-align: center;
@@ -735,8 +751,7 @@ body {
   height: 100%;
   margin-top: 70px;
   padding-top: 6rem;
-  padding-bottom: 5rem;
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 51%), url(../../img/contact-background.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 90%), url(../../img/contact-background.jpg);
   background-position: center;
   background-size: cover;
   border-top: 1px solid #eee; }
@@ -748,6 +763,10 @@ body {
     width: 50%;
     padding: 4rem 6rem; }
     @media only screen and (max-width: 56.25em) {
+      .section-contact .contact {
+        width: 100%;
+        padding: 17rem 0; } }
+    @media only screen and (max-width: 37.5em) {
       .section-contact .contact {
         width: 100%;
         padding: 4rem 0; } }
