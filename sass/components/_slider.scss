@@ -35,6 +35,7 @@
             & .dot {
                 height: 1rem;
                 width: 1rem;
+                margin: 0 .5rem;
                 border: 2px solid $color-grey-light-3;
                 border-radius: 50%;
                 display: inline-block;
@@ -58,14 +59,14 @@
         
     }
 
-    .mySlides {
-        display:none;
+    // .mySlides {
+    //     display:none;
         
-        @include respond(tab-port) {
-            display: inline-block;
-        }
+    //     @include respond(tab-port) {
+    //         display: inline-block;
+    //     }
         
-    }
+    // }
 
     &__photo-box {
         width: 100%;
@@ -119,14 +120,15 @@
     }
 
     &__mySlides {
-        height: $section-height;
-        margin-top: $navigation-height;
-        display: none;
+        height: 100vh;
+        // height: $section-height;
+        // margin-top: $navigation-height;
+        // display: none;
 
         @include respond(tab-port) {
-            display: inline-block;
+            // display: inline-block;
             height: 100%;
-            margin-top: 4rem;
+            margin-top: 6rem;
         }
     }
 

@@ -7,10 +7,9 @@ body {
 
 .heading-primary {
     font-size: 2.2rem;
-    font-weight: 300;
+    font-weight: 700;
     border-bottom: 1px solid; 
     letter-spacing: $default-letter-spacing;
-    font-family: 'Roboto', sans-serif;
     transition: all .4s;
 
     &--main {
@@ -69,10 +68,10 @@ body {
     margin: 0 6rem;
     padding: 1rem 0 2rem 0;
     font-size: 2rem;
-    font-weight: 300;
+    // font-weight: 300;
     border-bottom: 1px solid; 
     letter-spacing: $default-letter-spacing;
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
     transition: all .4s;
 
     @include respond(phone) {
@@ -189,6 +188,11 @@ body {
                 animation-duration: .6s;
             }
         }
+    }
+
+    &--bold {
+        font-weight: 700;
+        color: $color-grey-dark-2;
     }
 }
 
