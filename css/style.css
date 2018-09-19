@@ -58,6 +58,10 @@ html {
 body {
   box-sizing: border-box; }
 
+::selection {
+  background-color: #99ccff;
+  color: #fff; }
+
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -751,10 +755,13 @@ body {
   height: 100%;
   margin-top: 70px;
   padding-top: 6rem;
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 90%), url(../../img/contact-background.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 90%), url(../../img/contact-background-small.jpg);
   background-position: center;
   background-size: cover;
   border-top: 1px solid #eee; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .section-contact {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 90%), url(../../img/contact-background.jpg); } }
   @media only screen and (max-width: 56.25em) {
     .section-contact {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(../../img/contact-background.jpg); } }
