@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110729280-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110729280-1');
+        </script>
+
+
         <meta charset="UTF-8">
         <meta name="Description" content="AnnCode - Front end developer | Coding responsive websites - html5, css3, javascript, sass, node.js.">
         <meta name="Keywords" content="AnnCode, Anna Bartkowiak, Coding responsive websites, rwd, html5, css3, javascript, sass, node.js, front end developer, web developer, portfolio">
@@ -9,28 +20,13 @@
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+        <link rel="icon" type="image/png" href="img/logo-grey-2.png">
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
 
         <title> AnnCode - Front end developer | Coding responsive websites - html5, css3, javascript, sass, bem, node.js. </title>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!-- <script>
-        $(document).ready(function() {
-            $("html").on("submit","#contact_form",function(e){
-                e.preventDefault();
-                $("#send_form_status").html('').hide();
-                var data=$("#contact_form").serialize();
-                $.post("/send_form.php",data,function(res){
-                    $("#send_form_status").html(res.msg).show();
-                    if(res.status==1){ 
-                        $("#contact_form")[0].reset();
-                    } 
-                });
-            });
-        });
-        </script> -->
     </head>
 
     <body>
@@ -58,10 +54,6 @@
         <main>
             <!-- SLIDESHOW CONTAINER -->
             <section id="projects" class="section-slideshow">
-                <!-- <div class="jumbotron-rwd">
-                    <p class="heading-primary heading-primary--main">Hi, I'm Ania and I want to grow as a front-end developer. I am meticulous, empathetic and I like puzzle :)</p>
-                    <!-- <p class="heading-primary heading-primary--main">scroll-down</p> -->
-                <!--</div> -->
 
                 <div class="row mySlides section-slideshow__mySlides section-slideshow__fade">
                     <div class="col-1-of-2">
@@ -159,7 +151,7 @@
                         <div class="about-box about-box__animated--1">
                             <i class="about-box__icon icon-basic-heart"></i>
                             <h3 class="heading-secondary heading-secondary__animated--left">My life</h3>
-                            <p class="paragraph-secondary paragraph-secondary__animated--left">Live in Warsaw but came from Szczecin. I'm positive and open to the world. Empathetic and present to people. I like company, but also value my own. Sometimes chatty and hyperactive, sometimes quiet and calm. I like listening to chill music, doing regular sports, reading crime books, assembling the puzzle with fiancé and meditating alone.</p>
+                            <p class="paragraph-secondary paragraph-secondary__animated--left">Live in Warsaw but came from Szczecin. As a person I am a<span class="paragraph-secondary--bold"> positive and empathetic, open to the world and new challenges.</span> I’m enjoying company of people, but also value time spending alone. Sometimes chatty and hyperactive, sometimes quiet and calm. I like listening to chill music, doing regular sports, reading crime books and assembling the puzzle.</p>
                         </div>
                     </div>
 
@@ -167,7 +159,7 @@
                         <div class="about-box about-box__animated--2">
                             <i class="about-box__icon icon-basic-map"></i>
                             <h3 class="heading-secondary heading-secondary__animated--bottom">My way</h3>
-                            <p class="paragraph-secondary paragraph-secondary__animated--bottom">I started with an intensive bootcamp and I'm still learning on my own with freecodecamp, codecademy, stackoverflow, udemy. I know the basics of <span class="paragraph-secondary--bold">html5, css3, sass, git, javascript, bem, node.js, webpack</span>. These are the things that I can do myself: responsive websites using bem methodology, preprocessor sass and simple animations in css3/ javascript.</p>
+                            <p class="paragraph-secondary paragraph-secondary__animated--bottom">I started with an intensive bootcamp and I'm still learning on my own with freecodecamp, codecademy, stackoverflow, udemy. I know the basics of <span class="paragraph-secondary--bold">html5, css3, sass, git, javascript, bem, node.js, webpack</span>. These are the things that I can do myself: responsive websites using bem methodology, preprocessor sass and simple animations in css3.</p>
                         </div>
                     </div>
 
@@ -175,7 +167,7 @@
                         <div class="about-box about-box__animated--3">
                             <i class="about-box__icon icon-basic-world"></i>
                             <h3 class="heading-secondary heading-secondary__animated--right">My plans</h3>
-                            <p class="paragraph-secondary paragraph-secondary__animated--right">I want to grow as a front-end developer. I want to have a javascript and node.js superpower so old mistakes are gone, I turned them into lessons. You just gona see AnnCode coming. I just keep elevating. Just upgrading and I need you to be one step closer to the goal.  </p>
+                            <p class="paragraph-secondary paragraph-secondary__animated--right">I want to grow as a front-end developer. At this point, my main goal is to expand my knowledge of <span class="paragraph-secondary--bold">html, css, javascript and bootstrap.</span> Improving solving problems skills and the quality of these solutions. <span class="paragraph-secondary--bold">Writing clean and legible code.</span> Getting to know the basics of the main back-end languages.</p>
                         </div>
                     </div>
                 </div>
@@ -184,48 +176,53 @@
             <section id="contact" class="section-contact">
                 <div class="row">
                     <div class="contact">
+                        <div class="form__group form__info">
+                            <h1 class="heading-primary u-padding-bottom-big form__heading-1">Anna Bartkowiak / Junior Front-end Developer</h1>
+                            <div class="form__call-mail">
+                                <a href="http://github.com/Anna-Bartkowiak" target="_blank" class="form__anchor"><i class="fab fa-github-alt form__icons"></i>Anna-Bartkowiak</a>
+                            </div>
+
+                            <div class="form__call-mail">
+                                <a href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" target="_blank" class="form__anchor"><i class="fab fa-linkedin-in form__icons"></i>anna-bartkowiak</a>
+                            </div>
+
+                            <div class="form__call-mail">
+                                <a href="https://codepen.io/AnnCode/" target="_blank" class="form__anchor"><i class="fab fa-codepen form__icons"></i>AnnCode</a>
+                            </div>
+
+                            <div class="form__call-mail">
+                                <a href="mailto:anncodewaw@gmail.com" target="_blank" class="form__anchor"><i class="fas fa-envelope form__icons"></i>anncodewaw@gmail.com</a>
+                            </div>
+
+                            <div class="form__call-mail">
+                                <a href="tel:+48791467720" target="_blank" class="form__anchor"><i class="fas fa-phone form__icons"></i>+48 791 467 720</a>
+                            </div>
+                        </div>
+
+                        
                         <form class="form" action="/send_form.php" method="post" id="contact_form">
-                            <div class="form__group form__info">
-                                <h1 class="heading-primary u-padding-bottom-big form__heading-1">Anna Bartkowiak / Junior Front-end Developer</h1>
-                                <div class="form__call-mail">
-                                    <a href="http://github.com/Anna-Bartkowiak" target="_blank" class="form__anchor"><i class="fab fa-github-alt form__icons"></i>Anna-Bartkowiak</a>
-                                </div>
-
-                                <div class="form__call-mail">
-                                    <a href="http://www.linkedin.com/in/anna-bartkowiak-3b36a1b1" target="_blank" class="form__anchor"><i class="fab fa-linkedin-in form__icons"></i>anna-bartkowiak</a>
-                                </div>
-
-                                <div class="form__call-mail">
-                                    <a href="https://codepen.io/AnnCode/" target="_blank" class="form__anchor"><i class="fab fa-codepen form__icons"></i>AnnCode</a>
-                                </div>
-
-                                <div class="form__call-mail">
-                                    <a href="mailto:anncodewaw@gmail.com" target="_blank" class="form__anchor"><i class="fas fa-envelope form__icons"></i>anncodewaw@gmail.com</a>
-                                </div>
-
-                                <div class="form__call-mail">
-                                    <a href="tel:+48791467720" target="_blank" class="form__anchor"><i class="fas fa-phone form__icons"></i>+48 791 467 720</a>
-                                </div>
-                            </div>
-            
                             <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Name" id="name" required>
-                                <label for="name" class="form__label">Name</label>
-                            </div>
-            
-                            <div class="form__group">
-                                <input type="email" class="form__input" placeholder="Email" id="email" required>
+                                <input type="email" name="email" class="form__input" id="email" placeholder="Email" required>
                                 <label for="email" class="form__label">Email address</label>
                             </div>
-            
+
                             <div class="form__group">
-                                <textarea form="textarea-form" class="form__textarea" id="message" name="message" rows="4" cols="60" wrap="soft" placeholder="Your message"></textarea>
+                                <input type="text" name="name" class="form__input" id="name" placeholder="Name" required>
+                                <label for="name" class="form__label">Name</label>
                             </div>
 
-                            <div id="send_form_status"></div>
+                            <div class="form__group">
+                                <textarea name="message" id="message" class="form__textarea" rows="4" cols="60" wrap="soft" placeholder="Your message" required></textarea>
+                                <label for="message" class="form__label form__label__textarea">Your message</label>
+                            </div>
 
                             <div class="form__group">
-                                <button type="submit" class="btn btn__submit submit">submit</button>
+                                <div class="form__status" id="send_form_status"></div>
+                            </div>
+                            
+
+                            <div class="form__group">
+                                <button type="submit" class="btn btn__submit submit">Send</button>
                             </div>
                         </form>
                     </div>
@@ -240,7 +237,6 @@
         </footer>
 
         <script src="js/active-item-page-scroll.js"></script>
-        <!-- <script src="js/nav-active.js"></script> -->
         <script src="js/script.js"></script>
         <script src="js/contact-form.js"></script>
     </body>

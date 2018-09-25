@@ -22,7 +22,7 @@
 
     &__logo-box {
         position: absolute;
-        top: 1.9rem;
+        top: 1.8rem;
         left: 1.5rem;
         cursor: pointer;
         z-index: 3000;
@@ -96,6 +96,7 @@
         }
     }
 
+    
     &__link {
         
         &:link,
@@ -111,39 +112,42 @@
             color: $color-grey-dark-1;
         }
 
-        &:after {
-            position: absolute;
-            transition: .3s;
-            content: "";
-            width: 0;
-            left: 50%;
-            bottom: 0;
-            height: 2px;
-            background-image: linear-gradient(
-                            to right bottom, 
-                            $color-blue-light, 
-                            $color-blue-dark);
-        }
-        
-        &:hover {
-            cursor: pointer;
-            transform: scale(1.125);
-            // letter-spacing: .6rem;
-            background-image: linear-gradient(
-                            to right, 
-                            $color-blue-light, 
-                            $color-blue-dark);
-            -webkit-background-clip: text;
-            color: transparent;
-            border: none;
-
-            backface-visibility: hidden;
-
+        @media (hover) {
             &:after {
-                width: 100%;
-                left: 0;
+                position: absolute;
+                transition: .3s;
+                content: "";
+                width: 0;
+                left: 50%;
+                bottom: 0;
+                height: 2px;
+                background-image: linear-gradient(
+                                to right bottom, 
+                                $color-blue-light, 
+                                $color-blue-dark);
+            }
+            
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.125);
+                // letter-spacing: .6rem;
+                background-image: linear-gradient(
+                                to right, 
+                                $color-blue-light, 
+                                $color-blue-dark);
+                -webkit-background-clip: text;
+                color: transparent;
+                border: none;
+    
+                backface-visibility: hidden;
+    
+                &::after {
+                    width: 100%;
+                    left: 0;
+                }
             }
         }
+        
     }
 
     & .active {
@@ -157,7 +161,7 @@
         -webkit-background-clip: text;
         color: transparent;
 
-        &:after {
+        &::after {
             width: 100%;
             left: 0;
         }

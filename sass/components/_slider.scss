@@ -120,13 +120,15 @@
     }
 
     &__mySlides {
-        height: 100vh;
-        // height: $section-height;
-        // margin-top: $navigation-height;
-        // display: none;
+        height: 95vh;
+
+        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+            only screen and (min-width: 125em) {
+                height: 75vh;
+        }
 
         @include respond(tab-port) {
-            // display: inline-block;
             height: 100%;
             margin-top: 6rem;
         }

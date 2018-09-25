@@ -18,7 +18,7 @@
                                     rgba($color-white, .9) 0%,
                                     rgba($color-white, .9) 50%, 
                                     transparent 90%),
-                        url(../../img/contact-background-small.jpg);
+                        url(../../img/contact-background.jpg);
     background-position: center;
     background-size: cover;
     border-top: 1px solid $color-grey-light-2;
@@ -37,7 +37,7 @@
         background-image: linear-gradient(105deg, 
                                     rgba($color-white, .8) 0%,
                                     rgba($color-white, .8) 100%),
-                        url(../../img/contact-background.jpg);
+                        url(../../img/contact-background-small.jpg);
     }
 
     & .contact {
