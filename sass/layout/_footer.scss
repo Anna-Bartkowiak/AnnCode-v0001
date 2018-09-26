@@ -4,7 +4,7 @@
     font-size: $default-font-size;
     text-align: center;
     background-color: $color-grey-dark-2;
-    color: $color-grey-light-4;
+    color: $color-primary-dark;
 
     @include respond(phone) {
         padding: 1.2rem;
@@ -18,11 +18,11 @@
         &:visited {
             text-transform: uppercase;
             display: inline-block;
-            color: $color-grey-light-4;
+            color: $color-primary-dark;
         }
 
         &:hover{
-            color: $color-grey-light-2;
+            color: $color-primary-light;
         }
     }
 }

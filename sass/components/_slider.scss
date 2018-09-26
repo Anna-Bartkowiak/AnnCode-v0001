@@ -28,7 +28,7 @@
             line-height: 1.6rem;
 
             &:hover {
-                color: $color-grey-light-3;
+                color: $color-primary-dark;
                 transition: all .3s;
             }
 
@@ -36,7 +36,7 @@
                 height: 1rem;
                 width: 1rem;
                 margin: 0 .5rem;
-                border: 2px solid $color-grey-light-3;
+                border: 2px solid $color-primary-dark;
                 border-radius: 50%;
                 display: inline-block;
                 position: relative;
@@ -45,14 +45,14 @@
                 &:hover {
                     display: inline-block;
                     border-radius: 50%;
-                    background-color: $color-grey-light-3;
+                    background-color: $color-primary-dark;
                 }
             }
 
             & .active {
                 display: inline-block;
                 border-radius: 50%;
-                background-color: $color-grey-light-3;
+                background-color: $color-primary-dark;
             }
         }
         

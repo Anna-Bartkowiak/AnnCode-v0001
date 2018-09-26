@@ -1,7 +1,7 @@
 .section-about {
     margin-top: $navigation-height;
     padding: 10rem 3rem 3rem 3rem;
-    border-top: 2px dashed $color-grey-light-2;
+    border-top: 2px dashed $color-primary-light;
 
     @include respond (tab-port) {
         margin-top: $navigation-height-small;
@@ -21,7 +21,7 @@
                         url(../../img/contact-background.jpg);
     background-position: center;
     background-size: cover;
-    border-top: 1px solid $color-grey-light-2;
+    border-top: 1px solid $color-primary-light;
 
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
             only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),

@@ -3,32 +3,25 @@ $default-letter-spacing: .17rem;
 $default-letter-spacing-small: .1rem;
 
 // GRID
-
 $grid-width: 160rem;
 $gutter-horizontal: 3rem;
-$gutter-vertical: 3rem;
 
 // COLORS
 $color-primary: #F5F5F5;
-$color-primary-light: #D2CADB;
-$color-primary-dark: #47266B;
+$color-primary-light: #eee;
+$color-primary-dark: #9f9f9f;
+
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #6b6b6b;
 
 $color-white: #fff;
 $color-black: #000;
+
 $color-red: #ff7f7f;
 
 $color-blue-light: #99ccff;
 $color-blue-dark: #0073e5;
 
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-$color-grey-light-3: #9f9f9f;
-$color-grey-light-4: #b2b2b2;
-$color-grey-dark-1: #777;
-$color-grey-dark-2: #6b6b6b;
-
 // Height section
 $navigation-height: 70px;
 $navigation-height-small: 55px;
-$section-height: calc(100vh - 70px);
-$section-height-small: calc(100% - 55px);
