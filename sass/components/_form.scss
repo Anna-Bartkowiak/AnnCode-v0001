@@ -75,6 +75,7 @@
         background-color: rgba($color-white, .9);
         border: none;
         border-bottom: 3px solid transparent;
+        outline: none;
 
         @include respond(tab-port) {
             margin: 0 auto;
