@@ -127,7 +127,7 @@
         transform: translateY(-7.3rem);
 
         &__textarea {
-            transform: translateY(-13rem);
+            transform: translateY(-15rem);
         }
 
         @include respond(tab-port) {
@@ -157,6 +157,6 @@
     &__textarea:placeholder-shown + &__label  {
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-9.5rem);
+        transform: translateY(-12rem);
     }
 }

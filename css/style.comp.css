@@ -466,7 +466,7 @@ body {
   transition: all .3s;
   transform: translateY(-7.3rem); }
   .form__label__textarea {
-    transform: translateY(-13rem); }
+    transform: translateY(-15rem); }
   @media only screen and (max-width: 56.25em) {
     .form__label {
       text-align: left;
@@ -490,7 +490,7 @@ body {
 .form__textarea:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-9.5rem); }
+  transform: translateY(-12rem); }
 
 .section-slideshow {
   position: relative; }
@@ -769,16 +769,8 @@ body {
   height: 100%;
   margin-top: 70px;
   padding-top: 6rem;
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 90%), url(../../img/contact-background.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: linear-gradient(105deg, white 0%, rgba(0, 115, 229, 0.5) 70%, #0073e5 100%);
   border-top: 1px solid #eee; }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
-    .section-contact {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 90%), url(../../img/contact-background.jpg); } }
-  @media only screen and (max-width: 56.25em) {
-    .section-contact {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(../../img/contact-background-small.jpg); } }
   .section-contact .contact {
     margin: 0;
     width: 50%;
